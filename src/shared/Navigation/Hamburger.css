@@ -1,0 +1,22 @@
+@media screen and (max-width: 375px) {
+  .mobile-menu {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    position: relative;
+    z-index: 99;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: #f1cdb3;
+  }
+  .active-hamburger{
+    transform: rotateZ(90deg);
+  }
+}

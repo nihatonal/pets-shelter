@@ -1,0 +1,29 @@
+.logo-wrapper {
+  height: 60px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 9;
+  
+}
+
+.logo-name {
+  font-family: "Georgia", sans-serif;
+  font-style: normal;
+  color: #f1cdb3;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+.logo-subname {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}

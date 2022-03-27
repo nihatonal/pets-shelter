@@ -1,0 +1,24 @@
+.side-menu-wrapper {
+  width: 320px;
+  height: 823px;
+  background: #292929;
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out .4s;
+  opacity: 0;
+}
+
+.side-menu-navlinks {
+  width: 243px;
+  height: 327px;
+  flex-direction: column;
+}
+.side-menu-navlinks .navlink-item {
+    font-size: 32px;
+    width: 275px;
+    text-align: center;
+}

@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
+
+import { useLayoutEffect } from "react";
+
+import MainNavigation from "./shared/Navigation/MainNavigation";
+import MainPage from "./MainPage/Page/MainPage";
+import Footer from "./shared/Footer/Page/Footer";
+import "./App.css";
 
 function App() {
+  // const Wrapper = ({ children }) => {
+  //   const location = useLocation();
+  //   useLayoutEffect(() => {
+  //     document.documentElement.scrollTo(0, 0);
+  //   }, [location.pathname]);
+
+  //   return children;
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <MainNavigation />
+
+      <Routes>
+        <Route exact path="/" element={<MainPage />} />
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
   );
 }
 

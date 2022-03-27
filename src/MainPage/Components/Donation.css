@@ -1,0 +1,127 @@
+.section-donation {
+  height: 462px;
+  width: 1280px;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+}
+.section-donation-content-wrapper {
+  width: 915px;
+  height: 282px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.donation-dog {
+  width: 505px;
+  height: 261px;
+}
+.section-donation-content {
+  width: 380px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.donation-content-subtitle {
+  font-family: "Georgia", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.credit_card-wrapper {
+  width: 349px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f1cdb3;
+  border-radius: 9px;
+  transition: all ease-in 0.3s;
+  cursor: pointer;
+}
+.credit_card-wrapper:hover > .credit_card-number {
+  transition: all 0.3s;
+  color: #000;
+}
+.credit_card-wrapper:hover > .credit_card-img {
+  transform: scale(1.1);
+}
+
+.credit_card-number {
+  font-family: "Georgia", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation-content-desc {
+  font-family: "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+@media screen and (max-width: 800px) {
+  .section-donation {
+    height: 783px;
+    width: 768px;
+  }
+  .section-donation-content-wrapper {
+    height: 603px;
+    width: 505px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .donation-dog {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-donation {
+    height: 542.2px;
+    width: 320px;
+  }
+  .section-donation-content-wrapper {
+    height: 500px;
+    width: 320px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0;
+    text-align: center;
+  }
+  .donation-dog {
+    width: 260px;
+    height: 135.2px;
+  }
+  .section-donation-content {
+    width: 300px;
+    height: 281px;
+  }
+  .donation-content-subtitle {
+    letter-spacing: 0;
+    width: 274px;
+  }
+  .credit_card-wrapper {
+    width: 281px;
+    height: 43px;
+  }
+  .credit_card-number {
+    font-size: 15px;
+  }
+  .donation-content-desc {
+    text-align: justify;
+    width: 280PX;
+  } 
+}
