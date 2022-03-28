@@ -1,12 +1,11 @@
 import {
   BrowserRouter,
   Routes,
-  Switch,
   Route,
-  useLocation,
+ // useLocation,
 } from "react-router-dom";
 
-import { useLayoutEffect } from "react";
+//import { useLayoutEffect } from "react";
 
 import MainNavigation from "./shared/Navigation/MainNavigation";
 import MainPage from "./MainPage/Page/MainPage";

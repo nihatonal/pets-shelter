@@ -13,6 +13,7 @@
   align-items: center;
   position: absolute;
   transition: all 0.2s;
+  visibility:visible;
 }
 
 .carousel-btn-wrapper:hover {
@@ -25,6 +26,11 @@
 .right-btn {
   top: 0;
   right: -53px;
+}
+.slick-arrow {
+  border: 1px solid red;
+  position: absolute;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 800px) {

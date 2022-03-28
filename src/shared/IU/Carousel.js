@@ -9,7 +9,6 @@ import Card from "./Card";
 import "./Carousel.css";
 
 const PreviousBtn = (props) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -55,25 +54,27 @@ const carouselProperties = {
         centerMode: false,
       },
     },
-    // {
-    //   breakpoint: 1025,
-    //   settings: {
-    //     slidesToShow: 3,
-    //     centerMode: false,
-    //     slidesToScroll: 3,
-    //   },
-    // },
   ],
 };
 const Carousel = () => {
+  // const [pet, setPet] = useState()
+
+  const modalHandler = (x) => {
+    const newItem = PetsData.find((item) => item.id === x);
+    console.log(newItem);
+  };
+
   return (
     <div className="container">
       <Slider {...carouselProperties}>
+        {/* <Card item={item} click={modalHandler} /> */}
         {PetsData.map((item) => (
-          <Card key={item.id}>
+          <Card key={item.id} id={item.id}>
             <img src={item.image} alt={item.name} />
             <p className="card-name">{item.name}</p>
-            <button className="card-btn">Learn more</button>
+            <button className="card-btn" onClick={() => modalHandler(item.id)}>
+              Learn more
+            </button>
           </Card>
         ))}
       </Slider>
