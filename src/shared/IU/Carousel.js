@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { PetsData } from "../../assets/PetsData";
+import { useWindowDimensions } from "../../shared/hooks/useWindowDimensions";
+import Modal from "./Modal";
 import Card from "./Card";
 import "./Carousel.css";
 
@@ -44,24 +46,50 @@ const carouselProperties = {
       breakpoint: 426,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
         centerMode: false,
       },
     },
     {
-      breakpoint: 800,
+      breakpoint: 799,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
         centerMode: false,
       },
     },
   ],
 };
 const Carousel = () => {
-  // const [pet, setPet] = useState()
+  const [pet, setPet] = useState({});
+  const [show, setShow] = useState(false);
+  const { width } = useWindowDimensions();
 
   const modalHandler = (x) => {
     const newItem = PetsData.find((item) => item.id === x);
-    console.log(newItem);
+
+    window.scrollTo({
+      top: 1520,
+      behavior: "smooth",
+    });
+    if (width < 801) {
+      window.scrollTo({
+        top: 2210,
+        behavior: "smooth",
+      });
+      if (width < 380) {
+        window.scrollTo({
+          top: 1798,
+          behavior: "smooth",
+        });
+      }
+    }
+    setPet(newItem);
+    setShow(true);
+  };
+  const closeHandler = () => {
+    setShow(false);
+    setPet({});
   };
 
   return (
@@ -78,6 +106,18 @@ const Carousel = () => {
           </Card>
         ))}
       </Slider>
+      <Modal
+        className={show && "show-modal"}
+        Close={closeHandler}
+        img={pet.image}
+        name={pet.name}
+        breed={pet.breed}
+        desc={pet.desc}
+        age={pet.age}
+        inoculations={pet.inoculations}
+        diseases={pet.diseases}
+        parasites={pet.parasites}
+      />
     </div>
   );
 };
