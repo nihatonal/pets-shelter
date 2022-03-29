@@ -68,28 +68,27 @@ const Carousel = () => {
   const modalHandler = (x) => {
     const newItem = PetsData.find((item) => item.id === x);
 
-    window.scrollTo({
-      top: 1520,
-      behavior: "smooth",
-    });
-    if (width < 801) {
-      window.scrollTo({
-        top: 2210,
-        behavior: "smooth",
-      });
-      if (width < 380) {
-        window.scrollTo({
-          top: 1798,
-          behavior: "smooth",
-        });
-      }
-    }
+    // window.scrollTo({
+    //   top: 1520,
+    //   behavior: "smooth",
+    // });
+    // if (width < 801) {
+    //   window.scrollTo({
+    //     top: 2210,
+    //     behavior: "smooth",
+    //   });
+    //   if (width < 380) {
+    //     window.scrollTo({
+    //       top: 1798,
+    //       behavior: "smooth",
+    //     });
+    //   }
+    // }
     setPet(newItem);
     setShow(true);
   };
   const closeHandler = () => {
     setShow(false);
-    setPet({});
   };
 
   return (
