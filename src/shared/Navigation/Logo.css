@@ -5,19 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  z-index: 9;
-  margin-right: 568px;
-  
-}
-@media screen and (max-width: 800px) {
-  .logo-wrapper {
-    margin-right: 75px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .logo-wrapper {
-    margin-right: 41px;
-  }
+  z-index: 9;  
 }
 
 .logo-name {

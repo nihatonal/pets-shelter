@@ -6,7 +6,7 @@ import Carousel from "../../shared/IU/Carousel";
 import "./Pets.css";
 const Pets = () => {
   return (
-    <div className="section-pets">
+    <div className="section-pets" id="pets">
       <h3 className="section-content-title pets-title">
         Our friends who are looking for a house
       </h3>

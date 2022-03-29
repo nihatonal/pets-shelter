@@ -5,7 +5,7 @@ import "./Help.css";
 
 const Help = () => {
   return (
-    <div className="section-help">
+    <div className="section-help" >
       <h3 className="section-content-title">How you can help our shelter</h3>
         <div className="section-help-content">
             {HelpData.map((item)=>(

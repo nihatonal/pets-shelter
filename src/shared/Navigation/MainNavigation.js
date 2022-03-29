@@ -20,7 +20,7 @@ const MainNavigation = (props) => {
         <Logo />
         <NavLinks className="navlinks" />
         <Hamburger onClick={handleToggle} show={navbarOpen ? "active-hamburger" : ""}/>
-        <SideMenu style={navbarOpen ? { opacity: 1 } : null} onClickNav={handleToggle} />
+        <SideMenu style={navbarOpen ? { opacity: 1, right: -50 } : null} onClickNav={handleToggle} />
       </MainHeader>
     </React.Fragment>
   );

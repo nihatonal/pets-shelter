@@ -7,18 +7,19 @@ import "./NavLinks.css";
 const NavLinks = (props) => {
   return (
     <div className={`navlink-wrapper ${props.className}`}>
-      <Link onClick={props.onClickNav} className="navlink-item" smooth to="/">
+      <Link
+        onClick={props.onClickNav}
+        className="navlink-item"
+        smooth
+        to="#about"
+      >
         About the shelter
       </Link>
       <Link
-        className={
-          window.location.hash === "#pets"
-            ? "navlink-item is-active"
-            : "navlink-item"
-        }
+        className="navlink-item"
         onClick={props.onClickNav}
         smooth
-        to="/#pets"
+        to="#pets"
       >
         Our pets
       </Link>
@@ -26,7 +27,7 @@ const NavLinks = (props) => {
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
-        to="#marketing"
+        to="#help"
       >
         Help the shelter
       </Link>
@@ -34,7 +35,7 @@ const NavLinks = (props) => {
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
-        to="#about"
+        to="#contacts"
       >
         Contacts
       </Link>

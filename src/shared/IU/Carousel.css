@@ -11,19 +11,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  
   transition: all 0.2s;
   visibility:visible;
+  cursor: pointer;
 }
 
 .carousel-btn-wrapper:hover {
   background: #fddcc4;
 }
 .left-btn {
+  position: absolute;
   top: 0;
   left: -53px;
 }
 .right-btn {
+  position: absolute;
   top: 0;
   right: -53px;
 }

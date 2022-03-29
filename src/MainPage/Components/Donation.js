@@ -6,7 +6,7 @@ import "./Donation.css";
 
 const Donation = () => {
   return (
-    <div className="section-donation">
+    <div className="section-donation" id="help">
       <div className="section-donation-content-wrapper">
         <img className="donation-dog" src={donation_dog} alt="donation" />
 

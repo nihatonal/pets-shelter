@@ -10,6 +10,7 @@ import {
 import MainNavigation from "./shared/Navigation/MainNavigation";
 import MainPage from "./MainPage/Page/MainPage";
 import Footer from "./shared/Footer/Page/Footer";
+import Pets from "./PetsPage/Page/Pets";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<MainPage />} />
+        <Route exact path="/pets" element={<Pets />} />
       </Routes>
 
       <Footer />

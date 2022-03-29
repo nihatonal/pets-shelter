@@ -1,0 +1,55 @@
+.carousel_container {
+  height: 1012px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.carousel-slider {
+  width: 1200px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 30px;
+  column-gap: 40px;
+}
+.carousel-btn-wrapper {
+    font-family: "Georgia",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: inherit;
+}
+.carousel-btn-wrapper > p {
+  font-family: "Georgia",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: inherit;
+}
+.inactive {
+    color: #CDCDCD;
+    border: 2px solid #CDCDCD;
+}
+.buttons-wrapper {
+  width: 340px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+.current-page {
+  font-family: "Georgia", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: #f1cdb3;
+}

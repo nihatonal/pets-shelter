@@ -8,8 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out .5s;
   opacity: 0;
+  transition: all ease-in-out .5s;
+  z-index: -1;
 }
 
 .side-menu-navlinks {

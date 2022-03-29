@@ -4,9 +4,10 @@ header {
   display: flex;
   align-items: center;
   position: absolute;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   top: 60px;
   left: 40px;
+  z-index: 99;
 }
 @media screen and (max-width: 800px) {
   header {

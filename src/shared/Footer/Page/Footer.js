@@ -7,7 +7,7 @@ import "./Footer.css";
 
 const Footer = (props) => {
   return (
-    <footer>
+    <footer id="contacts">
       <div className="footer-content">
         <FooterContact className="footerContact"/>
         <FooterAddress />
