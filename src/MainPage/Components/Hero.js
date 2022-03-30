@@ -14,7 +14,7 @@ const Hero = () => {
             extremely wide and open heart. He or she will love you more than
             anybody else in the world, you will see!
           </p>
-          <Link to="/" className="hero-content-btn">
+          <Link to="/pets" className="hero-content-btn">
             Make a friend
           </Link>
         </div>

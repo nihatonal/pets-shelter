@@ -7,7 +7,12 @@
   position: relative;
   z-index: 9;  
 }
-
+.petsPage-logo .logo-name {
+  color: #545454;
+}
+.petsPage-logo .logo-subname {
+  color: #292929;
+}
 .logo-name {
   font-family: "Georgia", sans-serif;
   font-style: normal;

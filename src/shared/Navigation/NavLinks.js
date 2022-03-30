@@ -1,25 +1,28 @@
 import React, { useState } from "react";
 
 import { HashLink as Link } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 
 import "./NavLinks.css";
 
 const NavLinks = (props) => {
+  const location = useLocation();
+  
   return (
-    <div className={`navlink-wrapper ${props.className}`}>
+    <div className={location.pathname !=="/pets" ? `navlink-wrapper ${props.className}` : "petsPage-navlinks"}>
       <Link
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
-        to="#about"
+        to="/#about"
       >
         About the shelter
       </Link>
       <Link
-        className="navlink-item"
+        className={location.pathname ==="/pets" ? "navlink-item is-active": "navlink-item "}
         onClick={props.onClickNav}
         smooth
-        to="#pets"
+        to="/#pets"
       >
         Our pets
       </Link>
@@ -27,7 +30,7 @@ const NavLinks = (props) => {
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
-        to="#help"
+        to="/#help"
       >
         Help the shelter
       </Link>
@@ -35,7 +38,7 @@ const NavLinks = (props) => {
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
-        to="#contacts"
+        to="/#contacts"
       >
         Contacts
       </Link>

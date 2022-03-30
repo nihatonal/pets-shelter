@@ -14,7 +14,7 @@ const Pets = () => {
         Our friends who<br></br>are looking for a house
       </h3>
       <Carousel />
-      <Link to="/" className="pets-btn">Get to know the rest</Link>
+      <Link to="/pets" className="pets-btn">Get to know the rest</Link>
     </div>
   );
 };

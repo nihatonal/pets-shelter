@@ -31,8 +31,7 @@
   transform: scale(1.1);
   transition: all 0.3s;
 }
-.footer_item-contact h4,
-a {
+.footer_item-contact h4,.footer_item-contact a {
   font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;

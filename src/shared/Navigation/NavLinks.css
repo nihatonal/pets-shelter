@@ -1,4 +1,4 @@
-.navlink-wrapper {
+.navlink-wrapper, .petsPage-navlinks {
   width: 443px;
   height: 27px;
   display: flex;
@@ -24,4 +24,11 @@
 .is-active {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.petsPage-navlinks .navlink-item {
+  color: #545454;
+} 
+.petsPage-navlinks .navlink-item:hover {
+  color: #292929;
 }

@@ -16,7 +16,7 @@
   column-gap: 40px;
 }
 .carousel-btn-wrapper {
-    font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -25,7 +25,7 @@
   color: inherit;
 }
 .carousel-btn-wrapper > p {
-  font-family: "Georgia",sans-serif;
+  font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -34,8 +34,8 @@
   color: inherit;
 }
 .inactive {
-    color: #CDCDCD;
-    border: 2px solid #CDCDCD;
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
 }
 .buttons-wrapper {
   width: 340px;
@@ -52,4 +52,23 @@
   letter-spacing: 0.06em;
   color: #292929;
   background: #f1cdb3;
+}
+.card-image {
+  height: 270px;
+}
+
+.carousel-multi-card {
+  opacity: 1;
+  animation: move 1s;
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform:scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform:scale(1);
+  }
 }

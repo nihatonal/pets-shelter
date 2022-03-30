@@ -4,7 +4,7 @@ import "./Card.css";
 
 const Card = (props) => {
     return (
-        <div className="card-wrapper" id={props.id}>
+        <div className={`card-wrapper ${props.className}`} id={props.id}>
             {props.children}
         </div>
     )
