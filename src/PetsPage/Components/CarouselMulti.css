@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: 60px;
 }
 .carousel-slider {
   width: 1200px;
@@ -54,6 +55,7 @@
 }
 .card-image {
   height: 270px;
+  width: 270px;
 }
 
 .carousel-multi-card {
@@ -63,19 +65,44 @@
 
 @keyframes move {
   from {
-    opacity: 0;
-    transform:scale(0.95);
+    opacity: 0.5;
   }
   to {
     opacity: 1;
-    transform:scale(1);
   }
 }
 
 @media screen and (max-width: 800px) {
   .carousel_container {
-    height: 1733px;
-    width: 768px;
+    height: 1457px;
+    width: 580px;
+  }
+  .carousel-slider {
+    width: 580px;
+    height: 1365px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+
+}
+@media screen and (max-width: 375px) {
+  .carousel_container {
+    height: 1460px;
+    width: 320px;
+    margin-top: 42px;
+  }
+  .carousel-slider {
+    width: 320px;
+    height: 1365px;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+  .buttons-wrapper {
+    width: 320px;
   }
 
 }

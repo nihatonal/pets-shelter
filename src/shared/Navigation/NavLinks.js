@@ -9,12 +9,13 @@ const NavLinks = (props) => {
   const location = useLocation();
   
   return (
-    <div className={location.pathname !=="/pets" ? `navlink-wrapper ${props.className}` : "petsPage-navlinks"}>
+    <div className={`navlink-wrapper ${props.className}`}>
       <Link
         onClick={props.onClickNav}
         className="navlink-item"
         smooth
         to="/#about"
+        style={props.styleNavItem}
       >
         About the shelter
       </Link>
@@ -23,6 +24,7 @@ const NavLinks = (props) => {
         onClick={props.onClickNav}
         smooth
         to="/#pets"
+        style={props.styleNavItem}
       >
         Our pets
       </Link>
@@ -31,6 +33,7 @@ const NavLinks = (props) => {
         className="navlink-item"
         smooth
         to="/#help"
+        style={props.styleNavItem}
       >
         Help the shelter
       </Link>
@@ -39,6 +42,7 @@ const NavLinks = (props) => {
         className="navlink-item"
         smooth
         to="/#contacts"
+        style={props.styleNavItem}
       >
         Contacts
       </Link>

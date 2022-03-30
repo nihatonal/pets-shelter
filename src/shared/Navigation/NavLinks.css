@@ -32,3 +32,8 @@
 .petsPage-navlinks .navlink-item:hover {
   color: #292929;
 }
+@media screen and (max-width: 375px) {
+  /* .petsPage-navlinks .navlink-item {
+    display: none;
+  } */
+}

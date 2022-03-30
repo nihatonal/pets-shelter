@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import MainHeader from "./MainHeader";
 import NavLinks from "./NavLinks";
 import Hamburger from "./Hamburger";
@@ -9,18 +9,31 @@ import SideMenu from "./SideMenu";
 
 import "./MainNavigation.css";
 const MainNavigation = (props) => {
-    const [navbarOpen, setNavbarOpen] = useState(false)
+  const location = useLocation();
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleToggle = () => {
-    setNavbarOpen(!navbarOpen)
-  }
+    setNavbarOpen(!navbarOpen);
+  };
   return (
     <React.Fragment>
       <MainHeader>
         <Logo />
-        <NavLinks className="navlinks" />
-        <Hamburger onClick={handleToggle} show={navbarOpen ? "active-hamburger" : ""}/>
-        <SideMenu style={navbarOpen ? { opacity: 1, right: -50 } : null} onClickNav={handleToggle} />
+        <NavLinks
+          className="navlinks"
+          styleNavItem={
+            location.pathname === "/pets" ? { color: "#545454" } : null
+          }
+        />
+        <Hamburger
+          style={location.pathname === "/pets" ? { background: "#000" } : null}
+          onClick={handleToggle}
+          show={navbarOpen ? "active-hamburger" : ""}
+        />
+        <SideMenu
+          style={navbarOpen ? { opacity: 1, right: 0 } : null}
+          onClickNav={handleToggle}
+        />
       </MainHeader>
     </React.Fragment>
   );

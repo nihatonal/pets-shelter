@@ -4,12 +4,10 @@ header {
   display: flex;
   align-items: center;
   position: absolute;
-  align-items: center;
   justify-content: space-between;
   top: 60px;
   left: 40px;
   z-index: 99;
-  
 }
 .header-petsPage {
   position: static;
@@ -35,5 +33,11 @@ header {
     width: 257px;
     top: 30px;
     left: 10px;
+  }
+  .header-petsPage {
+    padding: 0 50px 0 10px;
+    width: 320px;
+    display: flex;
+    align-items: center;
   }
 }

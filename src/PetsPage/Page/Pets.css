@@ -1,9 +1,23 @@
 .pets-container {
-    height: 1342px;
-    width: 1280px;
-    background: #F6F6F6;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
+  height: 1342px;
+  width: 1280px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
 }
+
+@media screen and (max-width: 800px) {
+  .pets-container {
+    height: 1733px;
+    width: 768px;
+  }
+}
+@media screen and (max-width: 375px) {
+    .pets-container {
+        height: 1649px;
+        width: 320px;
+        padding-top: 42px;
+    }
+  }

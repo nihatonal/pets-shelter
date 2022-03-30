@@ -31,3 +31,8 @@
   letter-spacing: 0.1em;
   color: #ffffff;
 }
+/* @media screen and (max-width: 375px)  {
+  .petsPage-logo .logo-name {
+    width: 190px;
+  }
+} */
