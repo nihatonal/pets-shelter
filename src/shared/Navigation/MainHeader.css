@@ -24,6 +24,11 @@ header {
     top: 30px;
     left: 30px;
   }
+  .header-petsPage {
+    height: 120px;
+    width: 768px;
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 375px) {
   header {

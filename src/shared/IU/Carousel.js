@@ -80,7 +80,7 @@ const Carousel = () => {
         {/* <Card item={item} click={modalHandler} /> */}
         {PetsData.map((item) => (
           <Card key={item.id} id={item.id}>
-            <img src={item.image} alt={item.name} />
+            <img className="carousel-image" src={item.image} alt={item.name} />
             <p className="card-name">{item.name}</p>
             <button className="card-btn" onClick={() => modalHandler(item.id)}>
               Learn more

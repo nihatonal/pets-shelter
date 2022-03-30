@@ -16,7 +16,10 @@
   visibility:visible;
   cursor: pointer;
 }
-
+.carousel-image {
+  height:270px;
+  width: 270px;
+}
 .carousel-btn-wrapper:hover {
   background: #fddcc4;
 }

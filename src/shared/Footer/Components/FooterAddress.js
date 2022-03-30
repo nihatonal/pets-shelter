@@ -15,7 +15,7 @@ const FooterAddress = () => {
             href="https://www.google.com/maps/place/206+Washington+St,+Boston,+MA+02109,+Amerika+Birle%C5%9Fik+Devletleri/@42.3587231,-71.0596734,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370846859eb87:0x5d17fefb1a29e6e1!8m2!3d42.3587231!4d-71.0574847"
             target="_blank"
           >
-            1 Central Street, Boston (entrance from the store)
+            1 Central Street, Boston &nbsp;&nbsp;&nbsp; (entrance from the store)
           </a>
         </h4>
       </div>

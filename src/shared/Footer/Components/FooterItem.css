@@ -15,9 +15,7 @@
   letter-spacing: 0.055em;
   color: #ffffff;
 }
-.footer_item-contact {
-  width: 251px;
-  height: 32px;
+.footer_item .footer_item-contact {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -31,7 +29,7 @@
   transform: scale(1.1);
   transition: all 0.3s;
 }
-.footer_item-contact h4,.footer_item-contact a {
+.footer_item-contact a {
   font-family: "Georgia", sans-serif;
   font-style: normal;
   font-weight: 400;
