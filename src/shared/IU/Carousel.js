@@ -14,7 +14,7 @@ const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <div className="carousel-btn-wrapper left-btn">
+      <div className="carousel_btn-wrapper left-btn">
         <FaLongArrowAltLeft style={{ color: "#292929", fontSize: "20px" }} />
       </div>
     </div>
@@ -24,7 +24,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <div className="carousel-btn-wrapper right-btn">
+      <div className="carousel_btn-wrapper right-btn">
         <FaLongArrowAltRight style={{ color: "#292929", fontSize: "20px" }} />
       </div>
     </div>

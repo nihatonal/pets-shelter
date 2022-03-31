@@ -24,7 +24,7 @@ const CarouselMulti = () => {
     if(width < 800) {
       setpostPerPage(6)
     } 
-    if(width < 375) {
+    if(width < 400) {
       setpostPerPage(3)
     }
   }, [width]);
@@ -67,22 +67,22 @@ const CarouselMulti = () => {
         <button
           className={
             number <= 1
-              ? "carousel-btn-wrapper inactive"
-              : "carousel-btn-wrapper"
+              ? "carousel-btn-wrapper"
+              : "carousel-btn-wrapper isActive"
           }
           onClick={() => setNumber(1)}
-          disabled={number < 1}
+          disabled={number === 1 }
         >
           &lt;&lt;
         </button>
         <button
           className={
             number <= 1
-              ? "carousel-btn-wrapper inactive"
-              : "carousel-btn-wrapper"
+              ? "carousel-btn-wrapper"
+              : "carousel-btn-wrapper isActive"
           }
           onClick={() => setNumber(number - 1)}
-          disabled={number < 2}
+          disabled={number === 1}
         >
           &lt;
         </button>
@@ -93,9 +93,9 @@ const CarouselMulti = () => {
         </div>
         <button
           className={
-            number > PetsData.length / postPerPage
-              ? "carousel-btn-wrapper inactive"
-              : "carousel-btn-wrapper"
+            number > PetsData.length / postPerPage -1
+              ? "carousel-btn-wrapper"
+              : "carousel-btn-wrapper isActive"
           }
           onClick={() => setNumber(number + 1)}
           disabled={number > PetsData.length / postPerPage -1}
@@ -104,11 +104,12 @@ const CarouselMulti = () => {
         </button>
         <button
           className={
-            number > PetsData.length / postPerPage
-              ? "carousel-btn-wrapper inactive"
-              : "carousel-btn-wrapper"
+            number > PetsData.length / postPerPage -1
+              ? "carousel-btn-wrapper"
+              : "carousel-btn-wrapper isActive"
           }
           onClick={() => setNumber(Math.round(PetsData.length / postPerPage))}
+          disabled={number > PetsData.length / postPerPage -1}
         >
           &gt;&gt;
         </button>

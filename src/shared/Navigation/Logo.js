@@ -10,13 +10,13 @@ const Logo = (props) => {
     <Link to="/" className={`logo-wrapper ${props.className}`}>
       <p
         className={"logo-name"}
-        style={location.pathname === "/pets" ? { color: "#545454" } : null}
+        style={props.styleName}
       >
         Cozy House
       </p>
       <p
         className={"logo-subname"}
-        style={location.pathname === "/pets" ? { color: "#292929" } : null}
+        style={props.styleSubName}
       >
         Shelter for pets in Boston
       </p>

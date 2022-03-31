@@ -1,5 +1,10 @@
-
-@media screen and (max-width: 375px) {
+.navPagePets {
+    color: #545454;
+}
+.navPagePets:hover {
+    color: #292929;
+}
+@media screen and (max-width: 400px) {
     .header .navlinks, .header-petsPage .navlinks {
         display: none;
     }

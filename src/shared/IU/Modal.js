@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Close from "../../assets/images/close.svg";
 
-//import Close from '../assets/image/close.svg';
-
 import "./Modal.css";
 
 const Modal = (props) => {
@@ -14,7 +12,6 @@ const Modal = (props) => {
       </div>
 
       <div className={`modal-content-wrapper ${props.classContent}`}>
-        {/* <img className="close" src={Close} alt="close" onClick={props.Close}/> */}
         <img className="modal-image" src={props.img} alt={props.name} />
         <div className={"modal-content"}>
           <h3>{props.name}</h3>

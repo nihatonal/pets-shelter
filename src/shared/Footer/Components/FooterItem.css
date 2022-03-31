@@ -49,7 +49,7 @@ a {
   height: 46px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .footer_item {
     width: 278px;
     height: 208px;

@@ -18,7 +18,6 @@
 }
 .show-modal {
   pointer-events: auto;
-  /* top: 1520px; */
   opacity: 1;
 }
 .modal-content-wrapper {
@@ -114,6 +113,11 @@ li::before {
   position: absolute;
   top: 136px;
   left: 1080px;
+  transition: all ease-in-out .3s;
+}
+.close-wrapper:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 @media screen and (max-width: 800px) {
@@ -152,7 +156,7 @@ li::before {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .modal-container {
     width: 320px;
     height: 791px;

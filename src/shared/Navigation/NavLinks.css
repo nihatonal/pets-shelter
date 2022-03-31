@@ -19,7 +19,9 @@
 
 .navlink-item:hover {
     color: #FAFAFA;
-    border-bottom: 3px solid #F1CDB3;
+}
+.navlinkPagePets {
+  color: red;
 }
 .is-active {
   color: #FAFAFA;
@@ -31,9 +33,4 @@
 } 
 .petsPage-navlinks .navlink-item:hover {
   color: #292929;
-}
-@media screen and (max-width: 375px) {
-  /* .petsPage-navlinks .navlink-item {
-    display: none;
-  } */
 }

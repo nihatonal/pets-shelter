@@ -38,7 +38,7 @@
         width: 768px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .section-pets {
       width: 320px;
       height: 791px;

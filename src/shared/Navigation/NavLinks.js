@@ -12,7 +12,7 @@ const NavLinks = (props) => {
     <div className={`navlink-wrapper ${props.className}`}>
       <Link
         onClick={props.onClickNav}
-        className="navlink-item"
+        className={`navlink-item ${props.classNav}`}
         smooth
         to="/#about"
         style={props.styleNavItem}
@@ -20,7 +20,7 @@ const NavLinks = (props) => {
         About the shelter
       </Link>
       <Link
-        className={location.pathname ==="/pets" ? "navlink-item is-active": "navlink-item "}
+        className={location.pathname ==="/pets" ? `navlink-item is-active ${props.classNav}` : `navlink-item`}
         onClick={props.onClickNav}
         smooth
         to="/#pets"
@@ -30,7 +30,7 @@ const NavLinks = (props) => {
       </Link>
       <Link
         onClick={props.onClickNav}
-        className="navlink-item"
+        className={`navlink-item ${props.classNav}`}
         smooth
         to="/#help"
         style={props.styleNavItem}
@@ -39,7 +39,7 @@ const NavLinks = (props) => {
       </Link>
       <Link
         onClick={props.onClickNav}
-        className="navlink-item"
+        className={`navlink-item ${props.classNav}`}
         smooth
         to="/#contacts"
         style={props.styleNavItem}

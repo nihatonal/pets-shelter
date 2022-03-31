@@ -22,20 +22,24 @@
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: inherit;
-}
-.carousel-btn-wrapper > p {
-  font-family: "Georgia", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-  color: inherit;
-}
-.inactive {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #cdcdcd;
   border: 2px solid #cdcdcd;
+}
+.isActive {
+  border: 2px solid #F1CDB3;
+  color: #292929;
+}
+.isActive:hover {
+  background: #f1cdb3;
+}
+:disabled:hover{
+  background: #f6f6f6;
 }
 .buttons-wrapper {
   width: 340px;
@@ -51,6 +55,11 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #292929;
+  background: #f1cdb3;
+  pointer-events: none;
+  border: 2px solid #f1cdb3;
+}
+.current-page:hover {
   background: #f1cdb3;
 }
 .card-image {
@@ -87,7 +96,7 @@
   }
 
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .carousel_container {
     height: 1460px;
     width: 320px;

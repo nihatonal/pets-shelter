@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .section-help {
     height: 745px;
     width: 320px;

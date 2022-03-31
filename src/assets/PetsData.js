@@ -1,25 +1,14 @@
 export const PetsData = [
   {
-    name: "Charly",
-    desc: "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
-    image: require("./images/pets-charly.png"),
-    id: "pet1",
-    breed: "Dog - Parson Russell Terrier",
-    age: "3 years",
+    name: "Katrine",
+    desc: "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
+    image: require("./images/pets-katrine.png"),
+    id: "pet4",
+    breed: "Cat - British Shorthair",
+    age: "6 months",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
-  },
-  {
-    name: "Freddie",
-    desc: "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
-    image: require("./images/pets-freddie.png"),
-    id: "pet2",
-    breed: "Cat - ",
-    age: "2 months",
-    inoculations: "none",
-    diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Jennifer",
@@ -30,40 +19,29 @@ export const PetsData = [
     age: "2 months",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
-    name: "Katrine",
-    desc: "Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations.",
-    image: require("./images/pets-katrine.png"),
-    id: "pet4",
-    breed: "Cat - Korat",
-    age: "6 months",
+    name: "Woody",
+    desc: "Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.",
+    image: require("./images/pets-woody.png"),
+    id: "pet8",
+    breed: "Dog - Golden Retriever",
+    age: "1 year",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
-  },
-  {
-    name: "Scarlett",
-    desc: "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
-    image: require("./images/pets-scarlett.png"),
-    id: "pet5",
-    breed: "Dog - Parson Russell Terrier",
-    age: "2 months",
-    inoculations: "none",
-    diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Sophia",
     desc: "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
     image: require("./images/pets-sophia.png"),
     id: "pet6",
-    breed: "Dog - Labrador",
+    breed: "Dog - Shih tzu",
     age: "1 months",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Timmy",
@@ -71,21 +49,43 @@ export const PetsData = [
     image: require("./images/pets-timmy.png"),
     id: "pet7",
     breed: "Cat - British Shorthair",
-    age: "2 months",
+    age: "8 months",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
-    name: "Woody",
-    desc: "Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.",
-    image: require("./images/pets-woody.png"),
-    id: "pet8",
-    breed: "Dog - Golden",
-    age: "2 months",
+    name: "Charly",
+    desc: "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
+    image: require("./images/pets-charly.png"),
+    id: "pet1",
+    breed: "Dog - Jack Russell Terrier",
+    age: "3 years",
     inoculations: "none",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
+  },
+  {
+    name: "Scarlett",
+    desc: "Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.",
+    image: require("./images/pets-scarlett.png"),
+    id: "pet5",
+    breed: "Dog - Jack Russell Terrier",
+    age: "3 months",
+    inoculations: "none",
+    diseases: "none",
+    parasites: "none",
+  },
+  {
+    name: "Freddie",
+    desc: "Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.",
+    image: require("./images/pets-freddie.png"),
+    id: "pet2",
+    breed: "Cat - British Shorthair",
+    age: "4 months",
+    inoculations: "none",
+    diseases: "none",
+    parasites: "none",
   },
   {
     name: "Mandy",
@@ -96,7 +96,7 @@ export const PetsData = [
     age: "3 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Ireland",
@@ -107,7 +107,7 @@ export const PetsData = [
     age: "3 months",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Winter",
@@ -118,7 +118,7 @@ export const PetsData = [
     age: "1 year",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Addy",
@@ -129,7 +129,7 @@ export const PetsData = [
     age: "2 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Radar",
@@ -140,7 +140,7 @@ export const PetsData = [
     age: "2 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Floyd",
@@ -151,7 +151,7 @@ export const PetsData = [
     age: "4 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Tim",
@@ -162,7 +162,7 @@ export const PetsData = [
     age: "3 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Mushu",
@@ -173,7 +173,7 @@ export const PetsData = [
     age: "8 months",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Smokie Joe",
@@ -184,7 +184,7 @@ export const PetsData = [
     age: "3 years",
     inoculations: "Vaccinations up to date.",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Bronson",
@@ -195,7 +195,7 @@ export const PetsData = [
     age: "3 years",
     inoculations: "Examined, neutered and vaccinated",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Irvin",
@@ -206,7 +206,7 @@ export const PetsData = [
     age: "3 years",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Ollie",
@@ -217,7 +217,7 @@ export const PetsData = [
     age: "2 years",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Laguna",
@@ -228,7 +228,7 @@ export const PetsData = [
     age: "2 years",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Lilac",
@@ -239,7 +239,7 @@ export const PetsData = [
     age: "2 years",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Romeo",
@@ -250,7 +250,7 @@ export const PetsData = [
     age: "1 year",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
   {
     name: "Klondike",
@@ -261,6 +261,6 @@ export const PetsData = [
     age: "4 years",
     inoculations: "Vaccinations up to date and spayed",
     diseases: "none",
-    parasites: "none"
+    parasites: "none",
   },
 ];

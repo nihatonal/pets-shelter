@@ -18,20 +18,50 @@ const MainNavigation = (props) => {
   return (
     <React.Fragment>
       <MainHeader>
-        <Logo />
-        <NavLinks
-          className="navlinks"
-          styleNavItem={
-            location.pathname === "/pets" ? { color: "#545454" } : null
+        <Logo
+          styleName={
+            navbarOpen && location.pathname === "/pets"
+              ? { color: "#F1CDB3" }
+              : location.pathname === "/pets"
+              ? { color: "#545454" }
+              : null
+          }
+          styleSubName={
+            navbarOpen && location.pathname === "/pets"
+              ? { color: "#F1CDB3" }
+              : location.pathname === "/pets"
+              ? { color: "#292929" }
+              : null
           }
         />
+        <NavLinks
+          className="navlinks"
+          // styleNavItem={
+          //   location.pathname === "/pets" ? { color: "#545454" } : null
+          // }
+          classNav={location.pathname === "/pets" ? "navPagePets" : null}
+        />
         <Hamburger
-          style={location.pathname === "/pets" ? { background: "#000" } : null}
+          style={
+            navbarOpen && location.pathname === "/pets"
+              ? { background: "#F1CDB3" }
+              : location.pathname === "/pets"
+              ? { background: "#000" }
+              : navbarOpen
+              ? { opacity: 1, right: -50 }
+              : null
+          }
           onClick={handleToggle}
           show={navbarOpen ? "active-hamburger" : ""}
         />
         <SideMenu
-          style={navbarOpen ? { opacity: 1, right: 0 } : null}
+          style={
+            navbarOpen && location.pathname === "/pets"
+              ? { opacity: 1, right: 0 }
+              : navbarOpen
+              ? { opacity: 1, right: -50 }
+              : null
+          }
           onClickNav={handleToggle}
         />
       </MainHeader>
